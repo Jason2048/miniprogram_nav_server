@@ -4,8 +4,10 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
+		"start2": "NODE_ENV=production nodemon src/app.js",
 		"start": "node ./bin/www",
 		"t": "pm2 start ./bin/www  --name app",
+		"pm2": "pm2 start processes.json",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"author": "",
