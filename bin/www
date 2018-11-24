@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+
+var app = require('../app');
+// var debug = require('debug')('app:server');
+// var http = require('http');
+
+app.on('error', (err, ctx) => {
+  log.error('server error', err, ctx)
+});
+
+
+app.listen(3000);
+console.log('listening...');
+
